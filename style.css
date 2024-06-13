@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +11,7 @@
 
 body {
   background-color: #fff;
-  width: 100%;
+  width: 100vw;
   position: relative;
 }
 
@@ -15,7 +19,7 @@ header {
   display: flex;
   width: 100vw;
   padding-top: 0.3rem;
-  height: 1.5rem;
+  height: 5vh;
   background-color: #fff;
 }
 
@@ -34,10 +38,15 @@ header {
   width: 100vw;
 }
 
-.menu-icon {
+.menu-icon,
+.menu-icon-times {
   display: none;
-  font-size: 30px;
+  font-size: 2rem;
   cursor: pointer;
+}
+
+.menu-icon-times {
+  display: none;
 }
 
 .navBar ul.menu {
@@ -72,23 +81,23 @@ header {
 
 .heroSection {
   position: relative;
-  width: auto;
+  width: 100vw;
   margin-top: 5rem;
 }
 
 .heroSection > img {
-  width: 100vw;
-  height: 30rem;
-  margin: auto;
+  width: 100%;
+  height: 90vh;
+  align-items: center;
   object-fit: cover;
 }
 
 .heroIntro {
   position: absolute;
   top: 30%;
-  right: 60%;
+  right: 50%;
   color: #fff;
-  width: 30%;
+  width: 40%;
   font-weight: bolder;
 }
 
@@ -117,22 +126,22 @@ p > span {
 }
 
 .about {
-  width: 100vw;
+  width: 100%;
   margin-top: 4rem;
 }
 
 .about > h2 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   text-align: center;
+  margin-bottom: 1.5rem;
 }
 
 .about > p {
-  margin: auto;
-  margin-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 900;
   text-align: center;
-  width: 80%;
+  margin: auto;
+  width: 70%;
 }
 
 .services {
@@ -142,29 +151,32 @@ p > span {
   justify-content: space-evenly;
   margin-top: 4rem;
   margin-bottom: 2rem;
-  padding: 2rem;
 }
 
 .serviceContainer {
-  width: 24%;
+  width: 20%;
+  align-items: center;
   text-align: center;
 }
 
+.services h3 {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
 .services .serviceContainer .serviceBox {
-  width: 11rem;
+  width: 70%;
   height: 6rem;
+  align-items: center;
   text-align: center;
-  margin-right: 3.5rem;
-  margin-left: 3.5rem;
   padding-top: 2.5rem;
   margin-bottom: 2rem;
 }
 
 .serviceContainer > p {
   margin-bottom: 1rem;
-  padding-left: 3.5rem;
-  padding-right: 3.5rem;
-  text-align: left;
+  text-align: justify;
+  width: 80%;
 }
 
 .box1 {
@@ -185,13 +197,13 @@ p > span {
 }
 
 .aboutMore {
+  width: 100vw;
   margin-top: 4rem;
   display: flex;
-  padding: 2rem;
 }
 
 .aboutMore > div {
-  width: 50%;
+  width: 48%;
 }
 
 .aboutImage {
@@ -200,13 +212,14 @@ p > span {
   margin-right: 2rem;
 }
 
-.aboutImage > img {
+/* .aboutImage > img {
   margin-right: 1rem;
-}
+} */
 
 .aboutImage > img.dotted {
-  height: 14rem;
+  height: 13rem;
   margin-top: 3rem;
+  margin-right: 1rem;
 }
 
 .aboutInfo {
@@ -255,25 +268,22 @@ hr {
 .whatWeDoGallery1,
 .whatWeDoGallery2 {
   display: flex;
-  width: 90%;
+  width: 100vw;
   align-items: center;
-  margin: auto;
 }
 
 .gallery {
-  margin-right: 2rem;
+  justify-content: space-evenly;
   border-radius: 1rem;
-  text-align: center;
-  width: 33.3%;
-  height: auto;
+  align-items: center;
+  margin: auto;
   margin-top: 3rem;
 }
 
-.gallery > img {
+.whatWeDoInfo img {
   border-radius: 1rem;
   width: 20rem;
-  height: 18rem;
-  margin: 1rem;
+  height: 20rem;
   object-fit: cover;
 }
 
@@ -289,16 +299,16 @@ footer {
 
 .footerLogo {
   padding-top: 1rem;
-  width: 30%;
+  width: 28%;
 }
 
 .footerLogo > img {
-  width: 20rem;
-  height: 8rem;
+  width: 80%;
   object-fit: cover;
 }
 
 .footerBody {
+  width: 68%;
   display: flex;
   color: #fff;
   align-items: center;
@@ -352,19 +362,47 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 600px) {
-  .menu {
-    display: none;
-    visibility: hidden;
-    flex-direction: column;
+  header {
     width: 100%;
-    z-index: 10;
+  }
+
+  .headImg > img {
+    padding-top: 1rem;
+    width: 7rem;
+    height: 4rem;
+  }
+
+  .menu {
+    visibility: hidden;
   }
   .menu-icon {
     display: block;
-    margin-left: 9rem;
+    margin-left: 70%;
   }
+
+  .menu-icon-times {
+    display: none;
+    margin-right: 9rem;
+    color: rgb(101, 228, 101);
+  }
+
   .menu.active {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    right: 0%;
     display: flex;
+    flex-direction: column;
+    z-index: 10;
+    height: 100vh;
+    background-color: #0b0e0b;
+    padding-right: 6rem;
+  }
+
+  .menu-icon-times.active {
+    display: block;
+    padding-left: 2rem;
+    padding-top: 1rem;
   }
 
   .menu li {
@@ -372,12 +410,24 @@ input[type="submit"] {
     text-align: center;
   }
 
+  .heroSection {
+    width: 100vw;
+    margin-top: 4rem;
+    height: 70vh;
+  }
+
+  .heroSection > img {
+    padding: 0.2rem;
+    height: 60vh;
+    width: 100vw;
+  }
+
   .heroIntro {
     position: absolute;
     top: 30%;
     right: 0%;
     color: #fff;
-    width: 90%;
+    width: 100vw;
     font-weight: bolder;
   }
 
@@ -396,18 +446,21 @@ input[type="submit"] {
   }
 
   .heroIntro > h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    padding: 0.3rem;
     margin-bottom: 1rem;
+    text-align: center;
   }
 
   .heroIntro > p {
+    width: 80%;
     font-size: 1rem;
     color: rgb(255, 255, 255);
+    text-align: center;
   }
 
   .about {
-    width: 100vw;
-    margin-top: 4rem;
+    margin-top: 0.5rem;
   }
 
   .about > h2 {
@@ -417,10 +470,10 @@ input[type="submit"] {
   .about > p {
     margin: auto;
     margin-top: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 900;
-    text-align: center;
-    width: 50%;
+    text-align: justify;
+    width: 80%;
   }
 
   .services {
@@ -438,21 +491,22 @@ input[type="submit"] {
   }
 
   .services .serviceContainer .serviceBox {
-    width: 11rem;
-    height: 6rem;
-    text-align: center;
-    margin-right: 3.5rem;
-    margin-left: 3.5rem;
+    width: 40%;
+    margin: auto;
     padding-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
-  .serviceContainer > p,
-  h3 {
-    margin-bottom: 1rem;
+  .serviceContainer > h3 {
+    text-align: center;
+  }
+
+  .serviceContainer > p {
+    margin: auto;
     padding-left: 5rem;
     padding-right: 5rem;
-    text-align: left;
+    margin-bottom: 1rem;
+    width: 65%;
   }
 
   .box1 {
@@ -590,7 +644,6 @@ input[type="submit"] {
 
   .footerBody {
     display: block;
-    color: #fff;
   }
 
   .footerBody > div {
@@ -602,38 +655,272 @@ input[type="submit"] {
     margin-bottom: 1rem;
     text-align: left;
   }
+}
+@media screen and (max-width: 400px) {
+  header {
+    width: 100vw;
+    height: 7vh;
+  }
+  .menu {
+    visibility: hidden;
+  }
+  .menu-icon {
+    display: block;
+    margin-left: 60%;
+  }
 
-  .footerBody > div > p,
-  div {
+  .menu-icon-times {
+    display: none;
+    margin-right: 9rem;
+    color: rgb(101, 228, 101);
+  }
+
+  .menu.active {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    height: 100vh;
+    background-color: #0b0e0b;
+    padding-right: 6rem;
+  }
+
+  .menu-icon-times.active {
+    display: block;
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+
+  .menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .headImg > img {
+    padding-top: 1rem;
+    width: 7rem;
+    height: 4rem;
+  }
+
+  .heroSection {
+    width: 100vw;
+    margin-top: 4rem;
+    height: 70vh;
+  }
+
+  .heroSection > img {
+    height: 60vh;
+    width: 100vw;
+  }
+
+  .heroIntro {
+    position: absolute;
+    top: 30%;
+    right: 0%;
+    color: #fff;
+    width: 100vw;
+    font-weight: bolder;
+  }
+
+  .heroIntro > h1 > span {
+    color: rgb(101, 228, 101);
+    background-color: #fff;
+  }
+
+  h2 > span {
+    color: brown;
+  }
+
+  p > span {
+    color: brown;
+  }
+
+  .heroIntro > h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .heroIntro > p {
+    margin: auto;
+    text-align: center;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+  }
+
+  .about {
     margin-top: 0.5rem;
-    margin-bottom: 0.5rem;
+    padding-right: 0.4rem;
   }
 
-  a.webLink {
+  .about > h2 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .about > p {
+    margin: auto;
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: justify;
+    width: 85%;
+  }
+
+  .services {
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .serviceContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .services .serviceContainer .serviceBox {
+    width: 70%;
+    margin: auto;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .serviceContainer > h3 {
+    text-align: center;
+  }
+
+  .serviceContainer > p {
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
+
+  .box1 {
+    background-color: #155c0820;
+    border-radius: 5rem;
+  }
+  .box2 {
+    background-color: #5c4f0835;
+    border-radius: 5rem;
+  }
+  .box3 {
+    background-color: #25252525;
+    border-radius: 5rem;
+  }
+  .box4 {
+    background-color: #5c080825;
+    border-radius: 5rem;
+  }
+
+  .aboutMore {
+    margin-top: 4rem;
+    display: block;
+    padding: 2rem;
+  }
+
+  .aboutMore > div {
+    width: 100%;
+  }
+
+  .aboutImage {
+    padding: 1rem;
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  .aboutImage > img {
+    margin-right: 1rem;
+  }
+
+  .aboutImage > img.dotted {
+    height: 10rem;
+    width: 2rem;
+    margin-top: 3rem;
+  }
+
+  .aboutInfo {
+    padding: 2rem;
+  }
+
+  .aboutInfo > h2 {
+    color: rgb(101, 228, 101);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  hr {
+    height: 0.2rem;
+    background-color: #5c4f0835;
     text-decoration: none;
-    color: #fff;
   }
 
-  textarea {
+  .farmImg {
+    width: 80%;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 7rem;
+    border-top-right-radius: 13rem;
+    border-top-left-radius: 17rem;
+  }
+
+  .moreAboutUs {
+    width: 100%;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    background-color: #b7c79efc;
+  }
+
+  .moreAboutUs > h2 {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    color: rgb(123, 12, 12);
+  }
+
+  .whatWeDoInfo {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .whatWeDoGallery1,
+  .whatWeDoGallery2 {
+    display: block;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+  }
+
+  .gallery {
+    margin-right: 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+  }
+
+  .gallery > img {
+    border-radius: 1rem;
+    width: 80%;
+    height: 16rem;
+    object-fit: cover;
+  }
+
+  footer {
+    display: block;
     background-color: black;
-    margin-top: 1rem;
+    width: 100vw;
+    height: auto;
+    align-items: center;
   }
+}
 
-  input[type="submit"] {
-    background-color: rgb(101, 228, 101);
-    color: #fff;
-    width: 4rem;
-    padding: 0.5rem;
-    border: none;
-    border-radius: 0.2rem;
-  }
-
-  .info {
-    font-size: smaller;
-  }
-
-  .connect > img {
-    margin-top: 1rem;
-    padding-right: 1.5rem;
+@media screen and (max-width: 350px) {
+  .menu-icon {
+    display: block;
+    margin-left: 40%;
   }
 }
