@@ -30,7 +30,8 @@ header {
 
 .headImg img {
   object-fit: cover;
-  margin-top: 0.2rem;
+  width: 50%;
+  margin-left: 1rem;
 }
 
 .navBar {
@@ -341,6 +342,11 @@ a.webLink {
 textarea {
   background-color: black;
   margin-top: 1rem;
+  color: #fff;
+}
+
+textarea::placeholder {
+  color: #fff;
 }
 
 input[type="submit"] {
@@ -615,9 +621,9 @@ input[type="submit"] {
 
   .gallery > img {
     border-radius: 1rem;
-    width: 24rem;
-    height: 18rem;
-    margin: 1rem;
+    width: 29rem;
+    height: 29rem;
+    margin: 2rem;
     object-fit: cover;
   }
 
@@ -656,6 +662,314 @@ input[type="submit"] {
     text-align: left;
   }
 }
+@media screen and (max-width: 900px) {
+  header {
+    width: 100%;
+  }
+
+  .headImg > img {
+    width: 10rem;
+    height: 4rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .menu {
+    visibility: hidden;
+  }
+  .menu-icon {
+    display: block;
+    margin-left: 85%;
+  }
+
+  .menu-icon-times {
+    display: none;
+    margin-right: 9rem;
+    color: rgb(101, 228, 101);
+  }
+
+  .menu.active {
+    visibility: visible;
+    position: absolute;
+    top: 0;
+    right: 0%;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+    height: 100vh;
+    background-color: #0b0e0b;
+    padding-right: 6rem;
+  }
+
+  .menu-icon-times.active {
+    display: block;
+    padding-left: 2rem;
+    padding-top: 1rem;
+  }
+
+  .menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .heroSection {
+    width: 100vw;
+    margin-top: 4rem;
+    height: 70vh;
+  }
+
+  .heroSection > img {
+    padding: 0.2rem;
+    height: 60vh;
+    width: 100vw;
+  }
+
+  .heroIntro {
+    position: absolute;
+    top: 30%;
+    right: 0%;
+    color: #fff;
+    width: 100vw;
+    font-weight: bolder;
+  }
+
+  .heroIntro > h1 > span {
+    color: rgb(101, 228, 101);
+    background-color: #fff;
+    font-size: 2.8rem;
+  }
+
+  h2 > span {
+    color: brown;
+  }
+
+  p > span {
+    color: brown;
+  }
+
+  .heroIntro > h1 {
+    font-size: 2rem;
+    padding: 0.3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+
+  .heroIntro > p {
+    width: 80%;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+
+  .about {
+    margin-top: 0.5rem;
+  }
+
+  .about > h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .about > p {
+    margin: auto;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-align: justify;
+    width: 80%;
+  }
+
+  .services {
+    width: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .serviceContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  .services .serviceContainer .serviceBox {
+    width: 40%;
+    margin: auto;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .serviceContainer > h3 {
+    text-align: center;
+  }
+
+  .serviceContainer > p {
+    margin: auto;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin-bottom: 1rem;
+    width: 65%;
+  }
+
+  .box1 {
+    background-color: #155c0820;
+    border-radius: 5rem;
+  }
+  .box2 {
+    background-color: #5c4f0835;
+    border-radius: 5rem;
+  }
+  .box3 {
+    background-color: #25252525;
+    border-radius: 5rem;
+  }
+  .box4 {
+    background-color: #5c080825;
+    border-radius: 5rem;
+  }
+
+  .aboutMore {
+    margin-top: 4rem;
+    display: block;
+    padding: 2rem;
+  }
+
+  .aboutMore > div {
+    width: 100%;
+  }
+
+  .aboutImage {
+    padding: 1rem;
+    display: flex;
+    margin-right: 1rem;
+  }
+
+  .aboutImage > img {
+    margin-right: 1rem;
+  }
+
+  .aboutImage > img.dotted {
+    height: 13rem;
+    width: 3rem;
+    margin-top: 3rem;
+  }
+
+  .aboutInfo {
+    padding: 2rem;
+  }
+
+  .aboutInfo > h2 {
+    color: rgb(101, 228, 101);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+  hr {
+    height: 0.2rem;
+    background-color: #5c4f0835;
+    text-decoration: none;
+  }
+
+  .farmImg {
+    width: 80%;
+    border-bottom-left-radius: 5rem;
+    border-bottom-right-radius: 7rem;
+    border-top-right-radius: 13rem;
+    border-top-left-radius: 17rem;
+  }
+
+  .moreAboutUs {
+    width: 100%;
+    margin-top: 4rem;
+    padding-top: 2rem;
+    background-color: #b7c79efc;
+  }
+
+  .moreAboutUs > h2 {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 3.5rem;
+    letter-spacing: 0.2rem;
+    color: rgb(123, 12, 12);
+  }
+
+  .whatWeDoInfo {
+    width: 100%;
+    padding-bottom: 2rem;
+  }
+
+  .whatWeDoGallery1,
+  .whatWeDoGallery2 {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+  }
+
+  .gallery {
+    margin-right: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    margin-top: 2rem;
+  }
+
+  .gallery > img {
+    border-radius: 1rem;
+    width: 100%;
+    height: 14rem;
+    margin: 0.5rem;
+    object-fit: cover;
+  }
+
+  footer {
+    display: flex;
+    background-color: black;
+    width: 100vw;
+    height: auto;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .footerLogo {
+    width: 30%;
+  }
+
+  .footerLogo > img {
+    width: 9rem;
+    height: 4rem;
+    object-fit: cover;
+  }
+
+  .footerBody {
+    display: flex;
+    margin-left: -2rem;
+  }
+
+  .footerBody > div {
+    width: 30%;
+    padding: 1rem;
+  }
+
+  .footerBody > div > h3 {
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .footerBody > div > p,
+  span,
+  a,
+  label {
+    font-size: 12px;
+  }
+
+  .footerBody > div > img {
+    padding-right: 1.5rem;
+  }
+}
+
 @media screen and (max-width: 400px) {
   header {
     width: 100vw;
