@@ -678,7 +678,7 @@ input[type="submit"] {
   }
 
   .headImg {
-    margin-right: 10rem;
+    margin-right: 9rem;
   }
 
   .headImg > img {
@@ -692,6 +692,7 @@ input[type="submit"] {
   }
   .menu-icon {
     display: block;
+    margin-left: 14rem;
   }
 
   .menu-icon-times {
