@@ -21,23 +21,23 @@
           height="100"
         />
       </div>
-      <div class="navBar">
-        <nav>
-          <div class="menu-icon" id="toggle">&#9776;</div>
-          <ul class="menu" id="menuSelect">
-            <div class="menu-icon-times" id="toggleMenu">&times;</div>
-            <li><a href="/">Home</a></li>
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
+      <nav class="navBar">
+        <div class="menu-icon" id="toggle">&#9776;</div>
+        <ul class="menu" id="menuSelect">
+          <div class="menu-icon-times" id="toggleMenu">&times;</div>
+          <li><a href="/">Home</a></li>
+          <li>
+            <a href="#about">About</a>
+          </li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
       <section class="heroSection">
-        <img src="./assets/heroImage1.jpg" alt="Farmers in the Rice Farm" />
+        <div class="heroImg">
+          <img src="./assets/heroImage1.jpg" alt="Farmers in the Rice Farm" />
+        </div>
         <div class="heroIntro">
           <h1>Reaching the Poor Farmers in <span>Nigeria</span></h1>
           <p>
@@ -100,6 +100,7 @@
           </div>
         </section>
         <hr />
+        <!-- ######## WHO WE ARE ######## -->
         <section class="aboutMore">
           <div class="aboutImage">
             <img src="./assets/sideDot.png" class="dotted" />
@@ -128,27 +129,24 @@
         <section class="moreAboutUs">
           <h2>Our Gallery</h2>
           <div class="whatWeDoInfo">
-            <div class="whatWeDoGallery1">
-              <div class="gallery">
-                <img src="./assets/riceFarm.jpg" alt="" />
-              </div>
-              <div class="gallery">
-                <img src="./assets/pigFarm1.jpg" alt="" />
-              </div>
-              <div class="gallery">
-                <img src="./assets/riceFarm4.jpg" alt="" />
-              </div>
+            <div class="gallery">
+              <img src="./assets/riceFarm.jpg" alt="" />
             </div>
-            <div class="whatWeDoGallery2">
-              <div class="gallery">
-                <img src="./assets/riceFarm3.jpg" alt="" />
-              </div>
-              <div class="gallery">
-                <img src="./assets/pigFarm2.jpg" alt="" />
-              </div>
-              <div class="gallery">
-                <img src="./assets/riceFarm2.jpg" alt="" />
-              </div>
+            <div class="gallery">
+              <img src="./assets/pigFarm1.jpg" alt="" />
+            </div>
+            <div class="gallery">
+              <img src="./assets/riceFarm4.jpg" alt="" />
+            </div>
+
+            <div class="gallery">
+              <img src="./assets/riceFarm3.jpg" alt="" />
+            </div>
+            <div class="gallery">
+              <img src="./assets/pigFarm2.jpg" alt="" />
+            </div>
+            <div class="gallery">
+              <img src="./assets/riceFarm2.jpg" alt="" />
             </div>
           </div>
         </section>
@@ -186,11 +184,13 @@
         </div>
         <div>
           <h3>Enquiries</h3>
-          <label for="contact"
-            >Still curious about what we do?</label
-          >
+          <label for="contact">Still curious about what we do?</label>
           <form action="jesusistheanswermpcsl@gmail.com" method="post">
-            <textarea name="contact" id="contacts" placeholder="Ask your question"></textarea>
+            <textarea
+              name="contact"
+              id="contacts"
+              placeholder="Ask your question"
+            ></textarea>
             <div>
               <input type="submit" value="Submit" />
             </div>
