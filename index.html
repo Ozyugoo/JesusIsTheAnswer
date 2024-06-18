@@ -12,192 +12,204 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="headImg">
-        <img
-          src="./assets/JesusIsTheAnswerLogo1.png"
-          alt="Logo"
-          width="300"
-          height="100"
-        />
-      </div>
-      <nav class="navBar">
-        <div class="menu-icon" id="toggle">&#9776;</div>
-        <ul class="menu" id="menuSelect">
-          <div class="menu-icon-times" id="toggleMenu">&times;</div>
-          <li><a href="/">Home</a></li>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="heroSection">
-        <div class="heroImg">
-          <img src="./assets/heroImage1.jpg" alt="Farmers in the Rice Farm" />
+    <div class="container">
+      <header>
+        <div class="headImg">
+          <img src="./assets/JesusIsTheAnswerLogo1.png" alt="Logo" />
         </div>
-        <div class="heroIntro">
-          <h1>Reaching the Poor Farmers in <span>Nigeria</span></h1>
+        <nav class="navBar">
+          <ul class="menu" id="menuSelect">
+            <li><a href="/">Home</a></li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <div class="menu-icon" id="toggle" onclick="toggleSideBar()">
+            &#9776;
+          </div>
+          <ul class="sideBar-modal" id="sideBarModal">
+            <div class="menu-icon-times" onclick="toggleSideBar()">&times;</div>
+            <li><a href="/">Home</a></li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section class="heroSection">
+          <div class="heroImg">
+            <img src="./assets/heroImage1.jpg" alt="Farmers in the Rice Farm" />
+          </div>
+          <div class="heroIntro">
+            <h1>Reaching the Poor Farmers in <span>Nigeria</span></h1>
+            <p>
+              Your support and donation no matter how little can go along way to
+              help the poor farmers in Africa.
+            </p>
+          </div>
+        </section>
+        <section id="about" class="about">
+          <h2>Welcome to Jesus is the Answer <span>Corporative</span></h2>
           <p>
-            Your support and donation no matter how little can go along way to
-            help the poor farmers in Africa.
+            We believe that we your help, we can make a difference in the
+            farming system in <span>Nigeria</span>. Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Adipisci ex illo consequuntur
+            accusantium magni obcaecati sequi, repudiandae quasi dolorem earum
+            repellendus aut illum architecto.
           </p>
-        </div>
-      </section>
-      <section id="about" class="about">
-        <h2>
-          Welcome to Jesus is the Answer <span>Multipurpose Corporative</span>
-        </h2>
-        <p>
-          We believe that we your help, we can make a difference in the farming
-          system in <span>Nigeria</span>. Lorem ipsum dolor sit amet consectetur
-          adipisicing elit. Adipisci ex illo consequuntur accusantium magni
-          obcaecati sequi, repudiandae quasi dolorem earum repellendus aut illum
-          architecto.
-        </p>
-        <section class="services">
-          <div class="serviceContainer">
-            <div class="serviceBox box1">
-              <img src="./assets/support.png" alt="" />
+          <section class="services">
+            <div class="serviceContainer">
+              <div class="serviceBox box1">
+                <img src="./assets/support.png" alt="" />
+              </div>
+              <h3>Support</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+                hic veniam voluptatem saepe error sapiente est vitae accusamus,
+                fugit, velit sequi in reprehenderit nesciunt nulla nihil facere.
+                Porro, vel labore.
+              </p>
             </div>
-            <h3>Support</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
-              voluptatem illo amet sit. Lorem, ipsum dolor.
-            </p>
-          </div>
-          <div class="serviceContainer">
-            <div class="serviceBox box2">
-              <img src="./assets/prayer.png" alt="" />
+            <div class="serviceContainer">
+              <div class="serviceBox box2">
+                <img src="./assets/prayer.png" alt="" />
+              </div>
+              <h3>Prayer</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+                hic veniam voluptatem saepe error sapiente est vitae accusamus,
+                fugit, velit sequi in reprehenderit nesciunt nulla nihil facere.
+                Porro, vel labore.
+              </p>
             </div>
-            <h3>Prayer</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
-              Lorem ipsum dolor sit. itaque necessitatibus consequuntur unde.
-            </p>
-          </div>
-          <div class="serviceContainer">
-            <div class="serviceBox box3">
-              <img src="./assets/volunteer.png" alt="" />
+            <div class="serviceContainer">
+              <div class="serviceBox box3">
+                <img src="./assets/volunteer.png" alt="" />
+              </div>
+              <h3>Volunteer</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+                hic veniam voluptatem saepe error sapiente est vitae accusamus,
+                fugit, velit sequi in reprehenderit nesciunt nulla nihil facere.
+                Porro, vel labore.
+              </p>
             </div>
-            <h3>Volunteer</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione
-              quam incidunt eum accusamus.
-            </p>
-          </div>
-          <div class="serviceContainer">
-            <div class="serviceBox box4">
-              <img src="./assets/iconDonate.png" alt="" />
+            <div class="serviceContainer">
+              <div class="serviceBox box4">
+                <img src="./assets/iconDonate.png" alt="" />
+              </div>
+              <h3>Donate</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel
+                hic veniam voluptatem saepe error sapiente est vitae accusamus,
+                fugit, velit sequi in reprehenderit nesciunt nulla nihil facere.
+                Porro, vel labore.
+              </p>
             </div>
-            <h3>Donate</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas
-              quasi labore excepturi dignissimos.
-            </p>
-          </div>
-        </section>
-        <hr />
-        <!-- ######## WHO WE ARE ######## -->
-        <section class="aboutMore">
-          <div class="aboutImage">
-            <img src="./assets/sideDot.png" class="dotted" />
-            <img src="./assets/riceFarm4.jpg" class="farmImg" />
-          </div>
-          <div class="aboutInfo">
-            <h2>Who <span>We Are</span></h2>
-            <p>
-              A non profit and non-Government Organization Lorem ipsum dolor sit
-              amet, consectetur adipisicing. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Veniam, vitae. Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Illo sint, similique ullam ut
-              amet provident hic reiciendis assumenda. Quis, explicabo?
-            </p>
-            <br />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatibus, maiores? Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Atque dicta excepturi at nobis sapiente unde!
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
-              voluptates?
-            </p>
-          </div>
-        </section>
+          </section>
+          <!-- ######## WHO WE ARE ######## -->
+          <section class="aboutMore">
+            <div class="aboutImage">
+              <!-- <img src="./assets/sideDot.png" class="dotted" /> -->
+              <img src="./assets/riceFarm4.jpg" class="farmImg" />
+            </div>
+            <div class="aboutInfo">
+              <h2>Who <span>We Are</span></h2>
+              <p>
+                A non profit and non-Government Organization Lorem ipsum dolor
+                sit amet, consectetur adipisicing. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Veniam, vitae. Lorem ipsum dolor
+                sit amet consectetur adipisicing elit. Illo sint, similique
+                ullam ut amet provident hic reiciendis assumenda. Quis,
+                explicabo?
+              </p>
+              <br />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptatibus, maiores? Lorem ipsum dolor sit amet consectetur
+                adipisicing elit. Atque dicta excepturi at nobis sapiente unde!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni,
+                voluptates?
+              </p>
+            </div>
+          </section>
 
-        <section class="moreAboutUs">
-          <h2>Our Gallery</h2>
-          <div class="whatWeDoInfo">
-            <div class="gallery">
-              <img src="./assets/riceFarm.jpg" alt="" />
-            </div>
-            <div class="gallery">
-              <img src="./assets/pigFarm1.jpg" alt="" />
-            </div>
-            <div class="gallery">
-              <img src="./assets/riceFarm4.jpg" alt="" />
-            </div>
+          <section class="moreAboutUs">
+            <h2>Our Gallery</h2>
+            <div class="whatWeDoInfo">
+              <div class="gallery">
+                <img src="./assets/riceFarm.jpg" alt="" />
+              </div>
+              <div class="gallery">
+                <img src="./assets/pigFarm1.jpg" alt="" />
+              </div>
+              <div class="gallery">
+                <img src="./assets/riceFarm4.jpg" alt="" />
+              </div>
 
-            <div class="gallery">
-              <img src="./assets/riceFarm3.jpg" alt="" />
+              <div class="gallery">
+                <img src="./assets/riceFarm3.jpg" alt="" />
+              </div>
+              <div class="gallery">
+                <img src="./assets/pigFarm2.jpg" alt="" />
+              </div>
+              <div class="gallery">
+                <img src="./assets/riceFarm2.jpg" alt="" />
+              </div>
             </div>
-            <div class="gallery">
-              <img src="./assets/pigFarm2.jpg" alt="" />
-            </div>
-            <div class="gallery">
-              <img src="./assets/riceFarm2.jpg" alt="" />
-            </div>
-          </div>
+          </section>
         </section>
-      </section>
-    </main>
-    <footer>
-      <section class="footerLogo">
-        <img src="./assets/JesusIsTheAnswerLogo1.png" alt="" />
-      </section>
-      <section class="footerBody" id="contact">
-        <div class="connect">
-          <h3>Connect</h3>
-          <p>Connect with our events and partner with us</p>
-          <img src="./assets/x-twitter.png" alt="" />
-          <img src="./assets/facebook.png" alt="" />
-          <img src="./assets/instagram.png" alt="" />
-          <img src="./assets/youtube.png" alt="" />
-        </div>
-        <div>
-          <h3>Contact Us</h3>
-          <div class="info">
-            <img src="./assets/address.png" alt="" />
-            <span>10 Osumenyi Str., Achara Layout Enugu</span>
+      </main>
+      <footer>
+        <section class="footerLogo">
+          <img src="./assets/JesusIsTheAnswerLogo1.png" alt="" />
+        </section>
+        <section class="footerBody" id="contact">
+          <div class="connect">
+            <h3>Connect</h3>
+            <p>Connect with our events and partner with us</p>
+            <img src="./assets/x-twitter.png" alt="" />
+            <img src="./assets/facebook.png" alt="" />
+            <img src="./assets/instagram.png" alt="" />
+            <img src="./assets/youtube.png" alt="" />
           </div>
           <div>
-            <img src="./assets/website.png" alt="" />
-            <a class="webLink" href="https://jesus-is-the-answer.vercel.app/"
-              >Jesus is the Answer</a
-            >
-          </div>
-          <div>
-            <img src="./assets/call-icon.png" alt="" />
-            <span>08035574239</span>
-          </div>
-        </div>
-        <div>
-          <h3>Enquiries</h3>
-          <label for="contact">Still curious about what we do?</label>
-          <form action="jesusistheanswermpcsl@gmail.com" method="post">
-            <textarea
-              name="contact"
-              id="contacts"
-              placeholder="Ask your question"
-            ></textarea>
+            <h3>Contact Us</h3>
+            <div class="info">
+              <img src="./assets/address.png" alt="" />
+              <span>10 Osumenyi Str., Achara Layout Enugu</span>
+            </div>
             <div>
-              <input type="submit" value="Submit" />
+              <img src="./assets/website.png" alt="" />
+              <a class="webLink" href="https://jesus-is-the-answer.vercel.app/"
+                >Jesus is the Answer</a
+              >
             </div>
-          </form>
-        </div>
-      </section>
-    </footer>
+            <div>
+              <img src="./assets/call-icon.png" alt="" />
+              <span>08035574239</span>
+            </div>
+          </div>
+          <div>
+            <h3>Enquiries</h3>
+            <label for="contact">Still curious about what we do?</label>
+            <form action="jesusistheanswermpcsl@gmail.com" method="post">
+              <textarea
+                name="contact"
+                id="contacts"
+                placeholder="Ask your question"
+              ></textarea>
+              <div>
+                <input type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
+        </section>
+      </footer>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
