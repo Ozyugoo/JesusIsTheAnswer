@@ -129,11 +129,11 @@ header {
 }
 
 h2 > span {
-  color: brown;
+  color: rgb(255, 174, 0);
 }
 
 p > span {
-  color: brown;
+  color: rgb(255, 174, 0);
 }
 
 .heroIntro > h1 {
@@ -276,7 +276,7 @@ hr {
   text-align: center;
   font-size: 3.5rem;
   letter-spacing: 0.2rem;
-  color: rgb(123, 12, 12);
+  color: rgb(255, 162, 0);
 }
 
 .whatWeDoInfo {
@@ -340,6 +340,27 @@ footer {
 div {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.divConnect {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+}
+
+.divConnect > div {
+  text-align: center;
+  margin: auto;
+  background-color: #333;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 1rem;
+}
+
+.divConnect > div > img {
+  margin: auto;
+  padding-top: 0.6rem;
 }
 
 a.webLink {
@@ -506,7 +527,7 @@ input[type="submit"] {
   }
 
   .footerLogo {
-    width: 100%;
+    width: 80%;
     margin: auto;
     text-align: center;
   }
@@ -529,12 +550,11 @@ input[type="submit"] {
 }
 
 @media screen and (max-width: 489px) {
-  /* .heroIntro {
-    width: 90%;
-    top: 10%;
-    right: 5%;
-  } */
-
+  .heroIntro {
+    width: 80%;
+    top: 20%;
+    right: 10%;
+  }
   .heroIntro > h1 {
     font-size: 1.9rem;
     line-height: 32px;
@@ -552,5 +572,49 @@ input[type="submit"] {
 
   .aboutInfo > h2 {
     font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 389px) {
+  .heroIntro {
+    width: 90%;
+    top: 10%;
+    right: 5%;
+  }
+}
+
+@media screen and (max-width: 327px) {
+  .aboutInfo > h2 {
+    font-size: 2rem;
+  }
+
+  .aboutInfo > h2 > span {
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 319px) {
+  .heroIntro {
+    width: 96%;
+    top: 8%;
+    left: 3%;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .heroIntro {
+    width: 98%;
+    top: 5%;
+    left: 2%;
+  }
+
+  .heroIntro > h1 {
+    font-size: 1.7rem;
+    line-height: 32px;
+  }
+
+  .heroIntro > h1 > span,
+  .aboutInfo > h2 {
+    font-size: 1.9rem;
   }
 }
