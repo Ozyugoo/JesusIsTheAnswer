@@ -255,7 +255,7 @@ p > span {
 } */
 
 .aboutInfo > h2 {
-  color: rgb(101, 228, 101);
+  color: #000;
   margin-bottom: 1.5rem;
   font-size: 2.5rem;
   padding-top: 1rem;
@@ -280,7 +280,7 @@ hr {
   text-align: center;
   font-size: 3.5rem;
   letter-spacing: 0.2rem;
-  color: rgb(255, 162, 0);
+  color: #fff;
 }
 
 .whatWeDoInfo {
