@@ -9,6 +9,10 @@ body {
   background-color: #fff;
 }
 
+.container {
+  margin: 0;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -106,6 +110,7 @@ header {
 
 .heroImg {
   width: 100%;
+  margin: 0;
 }
 
 .heroImg > img {
@@ -314,26 +319,26 @@ footer {
   justify-content: space-between;
 }
 
-.footerLogo {
-  padding-top: 1rem;
-  width: 20%;
-}
-
-.footerLogo > img {
-  width: 90%;
-  object-fit: contain;
-}
-
 .footerBody {
   display: flex;
   color: #fff;
   align-items: center;
   justify-content: space-between;
+  padding: 0 20px;
 }
 
 .footerBody > div {
-  width: 33.333%;
+  width: 24%;
   padding: 2rem;
+}
+
+.footerLogo {
+  padding-top: 1rem;
+}
+
+.footerLogo > img {
+  width: 90%;
+  object-fit: contain;
 }
 
 .footerBody > div > h3 {
@@ -420,6 +425,16 @@ input[type="submit"] {
   .serviceContainer {
     width: 43%;
   }
+
+  .footerBody {
+    width: 80%;
+    flex-wrap: wrap;
+    margin: auto;
+  }
+
+  .footerBody > div {
+    width: 45%;
+  }
 }
 
 @media screen and (max-width: 815px) {
@@ -468,6 +483,10 @@ input[type="submit"] {
 
   .gallery {
     width: 45%;
+  }
+
+  .footerBody {
+    width: 90%;
   }
 }
 
@@ -519,37 +538,13 @@ input[type="submit"] {
   }
 
   .gallery {
-    width: 45%;
+    width: 48%;
     align-items: center;
     margin: auto;
-  }
-
-  footer {
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .footerLogo {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-  }
-
-  .footerLogo > img {
-    width: 70%;
   }
 
   .footerBody {
-    flex-wrap: wrap;
-    padding: 1rem;
-  }
-
-  .footerBody > div {
-    width: 100%;
-    margin: auto;
-    align-items: center;
-    justify-content: center;
+    width: 96%;
   }
 }
 
@@ -577,6 +572,11 @@ input[type="submit"] {
   .aboutInfo > h2 {
     font-size: 3rem;
   }
+
+  .footerBody > div {
+    width: 86%;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 389px) {
@@ -594,6 +594,14 @@ input[type="submit"] {
 
   .aboutInfo > h2 > span {
     font-size: 2.5rem;
+  }
+
+  footer {
+    padding: 0;
+  }
+
+  .footerBody > div {
+    width: 100%;
   }
 }
 
@@ -620,5 +628,9 @@ input[type="submit"] {
   .heroIntro > h1 > span,
   .aboutInfo > h2 {
     font-size: 1.9rem;
+  }
+
+  .moreAboutUs > h2 {
+    font-size: 1.8rem;
   }
 }
